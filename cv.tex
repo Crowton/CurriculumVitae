@@ -1,0 +1,111 @@
+\input{preamble}
+
+\begin{document}
+
+% +----------------------------------------------------------------------------+
+% |                                P A G E   I                                 |
+% +----------------------------------------------------------------------------+
+
+\input{header.tex}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%\begin{fullwidth}
+%  Ambitious and hard-working student of computer science
+%  with a deeper interest for
+%  \emph{algorithms} and \emph{logic and semantics}.
+%\end{fullwidth}
+
+
+% ----------------------------------------
+% Side bar
+% ----------------------------------------
+\marginpar{
+  % --------------------------------------
+  % Education
+  % --------------------------------------
+  \cvsection{Education}
+  
+  \input{education/au_bsc.tex}
+  
+  \divider
+  
+  \input{education/au_msc.tex}
+}
+
+\cvsection{Teaching}
+\input{experience/teaching_assistant.tex}
+
+\cvsection{Related Work}
+\input{experience/university_related_work.tex}
+
+\begin{fullwidth}
+  \cvsection{Extra Curriculum}
+\end{fullwidth}
+\input{experience/talent_track.tex}
+
+
+% +----------------------------------------------------------------------------+
+% |                                P A G E   II                                |
+% +----------------------------------------------------------------------------+
+
+\newpage
+
+% ----------------------------------------
+% Side bar
+% ----------------------------------------
+\marginpar{
+  % --------------------------------------
+  % Languages
+  % --------------------------------------
+  \cvsection{Languages}
+  
+  \input{languages/english.tex}
+
+  \divider
+
+  \input{languages/danish.tex}
+  
+  % --------------------------------------
+  % References
+  % --------------------------------------
+  \cvsection{References}
+
+  \input{references/gerth.tex}
+  
+  \divider
+  
+  \input{references/aslan.tex}
+}
+
+% ----------------------------------------
+% Main page
+% ----------------------------------------
+
+
+\cvsection{Volunteering}
+I highly enjoy the spare time activities at the university, and have
+contributed to the social aspects by voluntering work.
+
+\medskip
+
+\input{volunteering/tutor.tex}
+
+\divider
+
+\input{volunteering/it_camp.tex}
+
+\divider
+
+\input{volunteering/dsau.tex}
+
+\divider
+
+\input{volunteering/regnecentralen.tex}
+
+\divider
+
+\input{volunteering/fredagscafeen.tex}
+
+\end{document}
