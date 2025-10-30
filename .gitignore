@@ -1,3 +1,6 @@
+## Ignore folder structure all from /out
+out/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
