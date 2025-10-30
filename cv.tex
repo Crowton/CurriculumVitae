@@ -6,7 +6,25 @@
 % |                                P A G E   I                                 |
 % +----------------------------------------------------------------------------+
 
-\input{header.tex}
+% Header
+\name{Casper Moldrup Rysgaard}
+\tagline{Computer Science Ph.D. in Algorithms and Data structures from Aarhus University}
+\photo{2.8cm}{portrait}
+
+\personalinfo{% Add custom own with \printinfo{symbol}{detail}
+  \email{casperrysgaard@gmail.com}
+  \location{Aarhus, Denmark}
+  %
+  \linkedin{/casper-rysgaard}
+  \github{Crowton}
+  %
+  \orcid{0000-0002-3989-123X}
+}
+
+%% Make the header extend all the way to the right
+\begin{fullwidth}
+  \makecvheader
+\end{fullwidth}
 
 % ----------------------------------------
 % Side bar
@@ -16,13 +34,45 @@
   \vspace{1pt}
 
   \cvsection{Education}
-  \input{education/au_education.tex}
+  \cvevent{Ph.D. in Computer Science}{Aarhus University, Denmark}{2021 -- 2025}{}
+  \cvevent{MSc in Computer Science}{Aarhus University, Denmark}{2020 -- 2023}{}
+  \cvevent{BSc in Computer Science}{Aarhus University, Denmark}{2017 -- 2020}{}
+
   
   \cvsection{Teaching}
-  \input{experience/teaching_assistant.tex}
+  \cvevent{Teaching Assistant}{Algorithms and Data Structures}{2018, 2019, 2020, 2021, 2022, 2023, 2024}{}
+  \cvevent{}{Introduction to Programming with Scientific Applications (Python)}{2019, 2022, 2023}{}
+  \cvevent{}{Programming Languages}{2020, 2021}{}
+
   
   \cvsection{Volunteer Work}
-  \input{volunteering/au_volunteer.tex}
+  { \renewcommand{\ttdefault}{pcr}
+    \cvevent{}{Chairman, \TKET}{2022 -- 2023}{}
+    { \small
+      \TKET is a party- and lecture organisation for students of Computer Science, Math, Physics, and more.
+    }
+  }
+
+  \cvevent{}{Board Member, DSAU}{2019 -- 2022}{}
+  { \small
+    DSAU is a Computer Science student organisation hosting social and skill learning events, in collaboration with various companies.
+  }
+
+  \cvevent{}{Bartender, Fredagscaféen}{2018 -- 2025}{}
+  { \small
+    The Computer Science's friday bar at Aarhus University.
+  }
+
+  \cvevent{}{Kitchen Responsible, Regnecentralen}{2018 -- 2025}{}
+  { \small
+    A kitchen and social hub for students.
+  }
+
+  \cvevent{}{Tutor, Mat/Fys-Tutorgruppen}{2018 -- 2022, 2025}{}
+  { \small
+    The tutors welcome the new students to the university.
+  }
+
 }
 
 % ----------------------------------------
@@ -30,7 +80,18 @@
 % ----------------------------------------
 
 \cvsection{About Me}
-\input{about_me/about_me.tex}
+{½\small
+  I am a recent Ph.D. graduate from Aarhus University, supervised by Gerth Stølting Brodal.
+  My focus has been on Algorithms and Data structures, with a further focus on I/O efficiency and persistence.
+
+  \medskip
+  During my time at Aarhus University, I have spent many years as a Teaching Assistant (TA), with many of these as a lead TA.
+  I have, as part of this work, been the exam contact person a few times for written exams, where I handled error clarifications and collecting the repsonses.
+  Further, I have helped proofreading written exams sets for both errors and clarification issues. 
+  This gave me a lot of usefull insight into how exams are executed, and how the evaluation process works.
+  Additionally, my work with TA'ing have given me knowledge on how to grade handins, and how to ask questions in a manner understandable to the students.
+}
+
 
 % Magic space
 \vspace{11pt}
@@ -39,8 +100,8 @@
 \cvsection{Publications}
 \mynames{Rysgaard/Casper\bibnamedelima Moldrup}
 \nocite{*}
-{\footnotesize
-\printbibliography[heading=none]
+{ \footnotesize
+  \printbibliography[heading=none]
 }
 
 \end{document}
