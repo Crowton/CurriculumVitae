@@ -115,3 +115,19 @@
 \usepackage{ragged2e}
 \renewcommand{\raggedright}{\RaggedRight}
 % \renewcommand{\raggedright}{}
+
+
+\usepackage{graphicx,calc}
+\newlength\myheight
+\newlength\mydepth
+\settototalheight\myheight{Xygp}
+\settodepth\mydepth{Xygp}
+\setlength\fboxsep{0pt}
+\newcommand*\inlinegraphics[1]{%
+  \settototalheight\myheight{Xygp}%
+  \settodepth\mydepth{Xygp}%
+  \raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
+}
+
+
+\usepackage{makecell}

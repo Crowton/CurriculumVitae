@@ -9,12 +9,14 @@
 % Header
 \name{Casper Moldrup Rysgaard}
 \tagline{Computer Science Ph.D. in Algorithms and Data structures from Aarhus University}
-\photo{2.8cm}{portrait}
+\photo{2.8cm}{portrait2}
 
-\personalinfo{% Add custom own with \printinfo{symbol}{detail}
-  \email{casperrysgaard@gmail.com}
+\personalinfo{% Add custom own with \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix]
   \location{Aarhus, Denmark}
-  \linkedin{/casper-rysgaard}
+  \email{casperrysgaard@gmail.com}
+  \phone{(+45) 26 85 33 65}
+
+  \linkedin{casper-rysgaard}
   \github{Crowton}
   \orcid{0000-0002-3989-123X}
 }
@@ -30,20 +32,35 @@
 % ----------------------------------------
 \marginpar{
   % Magic space
-  \vspace{1pt}
+  \vspace{-2.5pt}
 
+  % Education
   \cvsection{Education}
-  \cvevent{Ph.D. in Computer Science}{Aarhus University, Denmark}{2021 -- 2025}{}
-  \cvevent{MSc in Computer Science}{Aarhus University, Denmark}{2020 -- 2023}{}
-  \cvevent{BSc in Computer Science}{Aarhus University, Denmark}{2017 -- 2020}{}
 
-  
-  \cvsection{Teaching}
-  \cvevent{Teaching Assistant}{Algorithms and Data Structures}{2018, 2019, 2020, 2021, 2022, 2023, 2024}{}
-  \cvevent{}{Introduction to Programming with Scientific Applications (Python)}{2019, 2022, 2023}{}
-  \cvevent{}{Programming Languages}{2020, 2021}{}
+  \cvevent{Ph.D. in Computer Science}{Aarhus University, Denmark}{August 2021 -- September 2025}{}
 
+  \divider
+
+  \cvevent{MSc in Computer Science}{Aarhus University, Denmark}{August 2020 -- June 2023}{}
+  Master's degree is obtained as first part of the Ph.D.
+  The courses had focus on \emph{algorithmics}, \emph{cryptology}, \emph{logic and semantics} and \emph{programming laguages}.
+  \\ \medskip
+  \begin{tabular}{@{}c@{\hspace{3pt}}l@{}}
+    \faGraduationCap & Course Average: $12$ (\emph{A+}).
+  \end{tabular}
   
+  \divider
+
+  \cvevent{BSc in Computer Science}{Aarhus University, Denmark}{August 2017 -- June 2020}{}
+  Including 30 ects extra curriculum talent track. See later section for further details.
+  \\ \medskip
+  \begin{tabular}{@{}c@{\hspace{3pt}}l@{}}
+    \faGraduationCap & Course Average: $11.31$ (\emph{A}). \\
+    \faFile*[regular] & Bachelor's Project: $12$ (\emph{A+}).
+  \end{tabular}
+  
+
+  % Volunteer Work
   \cvsection{Volunteer Work}
   { \renewcommand{\ttdefault}{pcr}
     \cvevent{}{Chairman, \TKET}{2022 -- 2023}{}
@@ -51,56 +68,144 @@
       \TKET is a party- and lecture organisation for students of Computer Science, Math, Physics, and more.
     }
   }
-  \cvevent{}{Board Member, DSAU}{2019 -- 2022}{}
+  \cvevent{}{Bartender, SMUKfest}{2022 -- }{}
   { \small
-    DSAU is a Computer Science student organisation hosting social and skill learning events, in collaboration with various companies.
+    SMUKfest is a festival in Skanderborg.
 
   }
   \cvevent{}{Bartender, Fredagscaféen}{2018 -- 2025}{}
   { \small
-    The Computer Science's friday bar at Aarhus University.
+    The Computer Science's friday bar. % at Aarhus University.
 
   }
   \cvevent{}{Kitchen Responsible, Regnecentralen}{2018 -- 2025}{}
   { \small
-    A kitchen and social hub for students.
+    A kitchen and social hub for students. % at Computer Science.
 
   }
-  \cvevent{}{Tutor, Mat/Fys-Tutorgruppen}{2018 -- 2022, 2025}{}
+  \cvevent{}{Tutor, Mat/Fys-Tutorforening}{2018 -- 2022, 2025}{}
   { \small
-    The tutors welcome the new students to the university.
+    The tutors welcome the new students. % to the university.
 
   }
+  \cvevent{}{Board Member, DSAU}{2019 -- 2022}{}
+  { \small
+    DSAU is a Computer Science student organization hosting social and skill learning events, in collaboration with various companies.
+
+  }
+
+  
+  % References
+  % \cvsection{References}
+  % \cvref{Prof.\ Gerth Stølting Brodal}{Aarhus University}{gerth@cs.au.dk}
+  % \emph{Ph.D. Supervisor}
 }
 
 % ----------------------------------------
 % Main Page
 % ----------------------------------------
 
-\cvsection{About Me}
-{ \small
-  I am a recent Ph.D. graduate from Aarhus University, supervised by Gerth Stølting Brodal.
-  My focus has been on Algorithms and Data structures, with a further focus on I/O efficiency and persistence.
+% Motivation
+\cvsection{Motivation}
 
-  \medskip
-  During my time at Aarhus University, I have spent many years as a Teaching Assistant (TA), with many of these as a lead TA.
-  I have, as part of this work, been the exam contact person a few times for written exams, where I handled error clarifications and collecting the repsonses.
-  Further, I have helped proofreading written exams sets for both errors and clarification issues. 
-  This gave me a lot of usefull insight into how exams are executed, and how the evaluation process works.
-  Additionally, my work with TA'ing have given me knowledge on how to grade handins, and how to ask questions in a manner understandable to the students.
 
+% Magic space
+\vspace{11pt}
+
+
+% Experience
+\cvsection{Experience}
+\cvevent{Ph.D. in Computer Science}{Aarhus University}{August 2021 -- July 2025}{Aarhus, Denmark}
+My Ph.D. was supervised by Gerth Stølting Brodal, and had a focus on Algorithms and Data structures, with a further focus on I/O efficiency and persistence, while covering several other topics.
+%
+The Ph.D. taught me skills in project management, collaboration, reading and understanding previous techniques and solutions, creating new algorithmic solutions, writing, and presentation skills. Further, peer reviewing for conferences taught me to evaluate others' work.
+For a complete list of my results, see the later publications section.
+
+\divider
+
+\cvevent{Teaching Assistant}{Algorithms and Data Structures}{2018, 2019, 2020, 2021, 2022, 2023, 2024}{}
+\vspace{-7pt}
+\cvevent{}{Introduction to Programming with Scientific Applications (Python)}{2019, 2022, 2023}{}
+\vspace{-7pt}
+\cvevent{}{Programming Languages}{2020, 2021}{}
+
+Teaching has taught me explanation and presentation skills, allowing me to meet the students where they are, and grading assignments have furthered my peer reviewing skills, including feedback.
+%
+From my later seniority I helped further at the weekly meetings of the teaching assistants, and at the final exam of the courses.
+
+\divider
+
+\cvevent{Software Consultant}{LBN Medical}{April 2016 -- January 2017}{Aalborg, Denmark}
+LBN Medical buys and sells used medical equipment. I worked on their Microsoft Access database, building tools for the sales employees.
+
+
+% +----------------------------------------------------------------------------+
+% |                               P A G E   II                                 |
+% +----------------------------------------------------------------------------+
+\newpage
+
+% ----------------------------------------
+% Side bar
+% ----------------------------------------
+\marginpar{
+  \cvsection{Languages}
+
+  \cvskill{English}{4}
+  Fluent
+
+  \divider
+
+  \cvskill{Danish}{5}
+  Native
 }
+
+% ----------------------------------------
+% Main Page
+% ----------------------------------------
+
+% Kattis
+\cvsection{Competitive Programming}
+
+I highly enjoy competitive programming, and solving the style of tasks presented.
+In relation to this I have participated in the danish championship of competitive programming and other related competitions, mostly for fun.
+These are often hosted at the website \emph{Kattis}.
+To view my user and ranking see: \href{https://open.kattis.com/users/casper-rysgaard}{open.kattis.com/users/casper-rysgaard}.
 
 
 % Magic space
 \vspace{11pt}
 
 % Publications
-\cvsection{Publications}
-\mynames{Rysgaard/Casper\bibnamedelima Moldrup}
-\nocite{*}
-{ \footnotesize
-  \printbibliography[heading=none]
-}
+\begin{fullwidth}
+  \cvsection{Publications}
+  \mynames{Rysgaard/Casper\bibnamedelima Moldrup}
+  \nocite{*}
+  { \footnotesize
+    \printbibliography[heading=none]
+  }
+\end{fullwidth}
+
+% Magic space
+\vspace{11pt}
+
+% Talent track
+\begin{fullwidth}
+  \cvsection{Extra Curriculum}
+  \cvevent{(Pre) Talent Track}{Aarhus University, Denmark}{August 2017 -- June 2020}{Aarhus, Denmark}
+  Participation in extra 30 etcs credit curriculum during my bachelor at Aarhus university.
+
+  \medskip
+
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{llll}
+    Time & Research area & Advisor & Project \\ \hline
+    2017 Fall   & CS Challenge & Michael Schwartzbach & 5 programming projects. \\
+    2018 Spring & Pre Talent Track & Various advisors & 5 introductory projects to the research groups. \\
+    2018 Fall   & Logic and Semantics & Aslan Askarov & \makecell[tl]{Proof of dynamic non-interference for a small \\ \quad imperative language in Coq.} \\
+    2019 Spring & \makecell[tl]{Algorithms and \\ \quad Data Structures} & Gerth Stølting Brodal & \makecell[tl]{Selecting the $k$ smallest items from an infinite heap \\ \quad in $O(k)$ time using deterministic selection.} \\
+    2019 Fall   & Logic and Semantics & \makecell[tl]{Bas Spitters \\ \quad \& Danil Annenkov} & \makecell[tl]{Analysis of Liquidity Smart Contracts, and formal \\ \quad verification in Coq.} \\
+    2020 Spring & Cryptologi & \makecell[tl]{Ivan Damgård \\ \quad \& Sabine Oechsner} & Formal verification of flooding network in Coq.
+  \end{tabular}
+\end{fullwidth}
 
 \end{document}
