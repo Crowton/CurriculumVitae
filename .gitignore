@@ -1,6 +1,9 @@
 ## Ignore folder structure all from /out
 out/
 
+## Ignore specialized cv's
+specialized_cvs/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
